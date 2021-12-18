@@ -38,6 +38,32 @@ window.onload = function(){
     $(this).siblings(".menu__links").slideToggle().css("display", "flex")
   })
 
+  $(".desc_video").click(function(){
+    var video = $(this)[0];
+    video.paused ? video.play() : video.pause()
+  })
+
+  $('.values').slick({
+    dots: true,
+    prevArrow: '<div class="prev"><img src="./img/icons/icon-slider-arrow.svg"></div>',
+    nextArrow: '<div class="next"><img src="./img/icons/icon-slider-arrow.svg"></div>',
+  })
+
+  $('.locations').slick({
+    slidesToShow: 4,
+    prevArrow: '<div class="prev"><img src="./img/icons/icon-slider-arrow.svg"></div>',
+    nextArrow: '<div class="next"><img src="./img/icons/icon-slider-arrow.svg"></div>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true
+        }
+      }
+    ]
+  })
   /* DEV SCRIPTS */
 
   $(".sitemap__opener").click(function(){
@@ -48,7 +74,7 @@ window.onload = function(){
   if(location.host.includes('localhost')){
     $('.sitemap__link').map(function(index,element){
       let link = $(element).attr('href')
-      let re = /\/milady/gi;
+      let re = /\/asbis/gi;
       $(element).attr('href',link.replace(re,''))
     })
   }

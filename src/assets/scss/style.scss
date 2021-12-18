@@ -4,7 +4,7 @@
 
 /* Collors */
 $balck: #353535;
-$blue: #133f68;
+$blue: #133F68;
 $darkBlue: #103659;
 $lightBlue: #F5F7F9;
 $orange: #F4823B;
@@ -42,7 +42,16 @@ body{
 }
 
 p{
-  margin: 0;
+  margin: 0 0 40px 0;
+  line-height: 170%;
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  @media all and (max-width: 500px){
+    margin: 0 0 20px 0;
+  }
 }
 
 img,video{
@@ -72,27 +81,67 @@ img,video{
 
 .slick-arrow{
   position: absolute;
+  top: calc(50% - 13px);
   z-index: 5;
   cursor: pointer;
+
+  @media all and (max-width: 980px){
+    top: -80px;
+  }
+
+  @media all and (max-width: 500px){
+    top: -60px;
+  }
+
+  &.prev {
+    transform: rotate(180deg);
+    left: -21px;
+
+    @media all and (max-width: 980px){
+      left: 0;
+    }
+  }
+
+  &.next {
+    right: -21px;
+
+    @media all and (max-width: 980px){
+      right: 0;
+    }
+  }
+
+}
+
+.slick-dotted {
+  margin-bottom: 61px;
+
+  @media all and (max-width: 500px){
+    margin-bottom: 41px;
+  }
 }
 
 .slick-dots{
   position: absolute;
-  top: calc(100% + 40px);
+  top: calc(100% + 50px);
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media all and (max-width: 500px){
+    top: calc(100% + 30px);
+  }
   
   li{
-    border: 1px solid #000000;
+    border: 1px solid $blue;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 10px;
+    width: 11px;
+    height: 11px;
+    margin: 0 7.5px;
     cursor: pointer;
+
     &.slick-active{
-      background: #000;
+      background: $blue;
     }
   }
   button{
@@ -104,12 +153,16 @@ img,video{
   color: red;
 }
 
+.orange{
+  color: $orange;
+}
+
 [data-popup]{
   cursor: pointer;
 }
 
 .btn {
-  font-weight: 300;
+  font-weight: normal;
   line-height: 30px;
   text-align: center;
   color: #fff;
@@ -121,9 +174,18 @@ img,video{
   width: max-content;
   cursor: pointer;
 
+  @media all and (max-width: 500px){
+    padding: 12px 84px;
+  }
+
   &--small {
     font-size: 14px;
     padding: 7px 24px;
+  }
+
+  &--white {
+    background: #fff;
+    color: $blue;
   }
 
   &-icon-right {
@@ -136,15 +198,46 @@ img,video{
 }
 
 .section {
-  margin-bottom: 120px
+  margin-bottom: 120px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  @media all and (max-width: 1024px){
+    margin-bottom: 50px;
+  }
 
   &--padding {
     padding: 60px 0;
+    background: $lightBlue;
+
+    @media all and (max-width: 500px){
+      padding: 50px 0;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media all and (max-width: 500px){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
   }
 }
 /* END common styles */
 
 @import './components/header.scss';
-
 @import './components/popup.scss';
 @import './components/footer.scss';
+
+/* pages */
+
+@import './components/main-page.scss';
