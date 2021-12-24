@@ -237,6 +237,13 @@
 
   .btn {
     margin: 0 auto;
+
+    @media all and (max-width: 500px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      justify-content: center;
+      width: 100%;
+    }
   }
 }
 
@@ -347,6 +354,246 @@
       line-height: 26px;
       letter-spacing: initial;
       opacity: 0.7;
+    }
+  }
+}
+
+.search-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+
+  h1 {
+    margin-bottom: 40px;
+
+    @media all and (max-width: 500px){
+      margin-bottom: 8px;
+    }
+  }
+
+  .search {
+    height: 44px;
+    width: 100%;
+    max-width: 325px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media all and (max-width: 500px){
+      max-width: 100%;
+      margin-bottom: 24px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 15px;
+    }
+
+    .input {
+      padding-right: 40px;
+      font-size: 14px;
+      border: none;
+
+      @media all and (max-width: 500px){
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.blog-detail {
+
+  &__banner {
+    height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    @media all and (max-width: 500px){
+      height: 200px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__content {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E9EFF2;
+    font-size: 20px;
+
+    @media all and (max-width: 500px){
+      font-size: 16px;
+    }
+
+    img {
+      margin: 0 auto 40px;
+      border-radius: 8px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 100px;
+
+    @media all and (max-width: 780px){
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    .date {
+      margin-right: 200px;
+
+      @media all and (max-width: 780px){
+        margin-right: 20px;
+      }
+    }
+
+    .share {
+      display: flex;
+      align-items: center;
+
+      a {
+        margin: 0 12.5px;
+      }
+    }
+  }
+
+  &__similar {
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+
+      @media all and (max-width: 500px){
+        margin-bottom: 24px;
+      }
+
+      @media all and (max-width:370px){
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .similar-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0.02em;
+        color: $blue;
+
+        @media all and (max-width: 500px){
+          font-size: 24px;
+        }
+      }
+
+      .similar-arrows {
+        display: flex;
+        align-items: center;
+
+        &-arow {
+          width: 40px;
+          height: 40px;
+          border-radius: 8px;
+          background: $lightBlue;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            width: 9px;
+          }
+        }
+        .prev {
+          transform: rotate(180deg);
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.cv-form {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &-header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media all and (max-width: 500px){
+      margin-bottom: 28px;
+    }
+
+    &-title {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    font-weight: 600;
+    font-size: 170px;
+    line-height: 200px;
+    color: $blue;
+    margin-bottom: 40px;
+    letter-spacing: initial;
+
+    @media all and (max-width: 500px){
+      font-size: 90px;
+      line-height: 110px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__status {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+
+    @media all and (max-width: 500px){
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 8px;
+    }
+  }
+
+  p {
+    @media all and (max-width: 500px){
+      font-size: 14px;
+      line-height: 26px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .btn {
+    margin-top: 70px;
+
+    @media all and (max-width: 500px){
+      margin-top: 50px;
+      font-size: 12px;
+      width: 100%;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./partials/head.html')
+  <body>
+    @@include('./partials/header.html')
+
+    <main class="page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="/" class="breadcrumbs__crumb">Home page</a>
+          <a href="#" class="breadcrumbs__crumb">404</a>
+        </div>
+        
+        <div class="error-page">
+          <div class="error-page__title">Oops!</div>
+          <div class="error-page__status">404 -  page not found</div>
+          <p>The page you requested is currently not available. It may <br> have been renamed or removed from our server</p>
+          <a href="/" class="btn">Go back to the home page</a>
+        </div>
+        
+      </div>
+    </main>
+
+    @@include('./partials/footer.html')
+  </body>
+</html>
+
+

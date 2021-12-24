@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./partials/head.html')
+  <body>
+    @@include('./partials/header.html')
+
+    <main>
+      <div class="vacancy">
+        <div class="vacancy__banner">
+          <picture>
+            <source media="(max-width: 500px)" srcset="./img/vacancy-mobile.png">
+            <img src="./img/vacancy.png" alt="" class="vacancy__banner-bg fit">
+          </picture>
+
+          <div class="container">
+            <div class="breadcrumbs">
+              <a href="/" class="breadcrumbs__crumb">Home page</a>
+              <a href="#" class="breadcrumbs__crumb">Vacancy</a>
+            </div>
+            <h1 class="page__title">Vacancy</h1>
+          </div>
+        </div>
+
+        <div class="vacancy__filter-wrapper">
+          <div class="container">
+            <form class="vacancy__filter">
+              <select name="city">
+                  <option value="" disabled selected >Сountry</option>
+                  <option value="Minsk">Минск</option>
+              </select>
+
+              <select name="brand">
+                  <option value="" disabled selected>Department</option>
+                  <option value="Brand">Brand</option>
+              </select>
+
+              <select name="type">
+                  <option value="" disabled selected>Working conditions</option>
+                  <option value="Type">Type</option>
+              </select>
+
+              <button type="submit" class="btn_find">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="vacancy__description">
+            <p class="upper">Dear Applicants!</p>
+            <p>ASBIS-Ukraine is actively developing in qualified, energetic and creative employees with experience in the IT market. If you have interest and interest in a new job, are ready to work for the future and want to realize your potential, send your resume to our email address: <a href="mailto:hr@asbis.ua">hr@asbis.ua</a> </p>
+            <p class="upper">We will be glad to welcome you to our team!</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__item-header">Brand and communications</div>
+              <div class="accordion__item-content">
+                <div class="vacancy__list">
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Apple Sales Manager</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Channel Development Manager - Techniques</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__item-header">Business development</div>
+              <div class="accordion__item-content">
+                <div class="vacancy__list">
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__item-header">Finance</div>
+              <div class="accordion__item-content">
+                <div class="vacancy__list">
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__item-header">Sales</div>
+              <div class="accordion__item-content">
+                <div class="vacancy__list">
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__item-header">Marketing</div>
+              <div class="accordion__item-content">
+                <div class="vacancy__list">
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                  <div class="vacancy__list-item">
+                    <div class="vacancy-data">
+                      <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                      <div class="vacancy-data__info">
+                        <span class="place">Kiev</span>
+                        <span class="time">21.06.2021</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn--small"><span>View Job</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sendcv-banner">
+            <div class="text">We invite you to become a part <br> of our team!</div>
+            <a href="#" class="btn btn--white">Send CV</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @@include('./partials/footer.html')
+  </body>
+</html>
+
+

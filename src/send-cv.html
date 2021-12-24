@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./partials/head.html')
+  <body>
+    @@include('./partials/header.html')
+
+    <main class="page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="/" class="breadcrumbs__crumb">Home page</a>
+          <a href="#" class="breadcrumbs__crumb">Submit your CV</a>
+        </div>
+        <div class="cv-form-header">
+          <div class="cv-form-header-title">Dear Applicants!</div>
+          <p>Did not you find what you were looking gor? Send your resume and our HR departament wll contact you</p>
+        </div>
+        <div class="cv-form"> 
+          <form action="#" class="vacancy-detail__resume-form">
+            <label class="input-with-paceholder">
+              <span class="placeholder">Name <span class="red">*</span></span>
+              <input type="text" class="input">
+            </label>
+            <label class="input-with-paceholder">
+              <span class="placeholder">Last name <span class="red">*</span></span>
+              <input type="text" class="input">
+            </label>
+            <label class="input-with-paceholder">
+              <span class="placeholder">E-mail <span class="red">*</span></span>
+              <input type="text" class="input">
+            </label>
+            <label class="input-with-paceholder">
+              <span class="placeholder">Phone <span class="red">*</span></span>
+              <input type="text" class="input">
+            </label>
+            <label class="input-with-paceholder">
+              <span class="placeholder">Departament <span class="red">*</span></span>
+              <select name="" class="input">
+                <option value="" disabled selected>Select one</option>
+                <option value="Brand">Brand</option>
+              </select>
+            </label>
+            <label class="input-with-paceholder">
+              <span class="placeholder">Current location <span class="red">*</span></span>
+              <select name="" class="input">
+                <option value="" disabled selected>Select one</option>
+                <option value="Brand">Brand</option>
+              </select>
+            </label>
+
+            <label class="input-with-paceholder">
+              <span class="placeholder">Upload CV <span class="red">*</span></span>
+              <div class="file-loader input">
+                <input type="file" class="input">
+                <div class="file-loader__btn">file-loader</div>
+                <span class="file-loader__file-name">or link</span>
+              </div>
+              <input type="text" class="input" placeholder="or paste the link to your CV">
+            </label>
+            <label class="input-with-paceholder">
+              <span class="placeholder">Linkedin profile</span>
+              <input type="text" class="input">
+            </label>
+            <label class="input-with-paceholder">
+              <span class="placeholder">How did you hear about us?</span>
+              <select name="" class="input">
+                <option value="" disabled selected>Select one</option>
+                <option value="Brand">Brand</option>
+              </select>
+            </label>
+
+            <div class="checkbox_box">
+              <input type="checkbox">
+              <span class="checkbox_box__content">
+                I accept the terms of the <a href="#">Privacy Policy</a>
+              </span>
+            </div>
+            <div class="vacancy-detail__resume-policy">
+              All ASBIS product sales to applicant will be subject to ASBIS Terms and Conditions of Sales as published at the time of sale.Please take note that ASBIS is a wholesale supplier of computer hardware and software to the markets of Europe, Middle East and Africa. It deals with corporate B2B clients such as resellers, retailers, е-tailers, system builders, OEMs and the like. ASBIS does not deliver directly to end users. Visit ASBIS Resellers section to find out IT store near you.
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+    @@include('./partials/footer.html')
+  </body>
+</html>
+
+

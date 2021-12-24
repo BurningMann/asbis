@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./partials/head.html')
+  <body>
+    @@include('./partials/header.html')
+
+    <main>
+      <div class="vacancy">
+        <div class="vacancy__banner">
+          <picture>
+            <source media="(max-width: 500px)" srcset="./img/vacancy-mobile.png">
+            <img src="./img/vacancy.png" alt="" class="vacancy__banner-bg fit">
+          </picture>
+          <div class="container">
+            <div class="breadcrumbs">
+              <a href="/" class="breadcrumbs__crumb">Home page</a>
+              <a href="#" class="breadcrumbs__crumb">Vacancy</a>
+            </div>
+            <h1 class="page__title">Vacancy</h1>
+          </div>
+        </div>
+
+        <div class="vacancy__filter-wrapper">
+          <div class="container">
+            <form class="vacancy__filter">
+              <select name="city">
+                  <option value="" disabled selected >Сountry</option>
+                  <option value="Minsk">Минск</option>
+              </select>
+
+              <select name="brand">
+                  <option value="" disabled selected>Department</option>
+                  <option value="Brand">Brand</option>
+              </select>
+
+              <select name="type">
+                  <option value="" disabled selected>Working conditions</option>
+                  <option value="Type">Type</option>
+              </select>
+
+              <button type="submit" class="btn_find">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="container">
+
+          <div class="vacancy__list">
+            <div class="vacancy__list-item">
+              <div class="vacancy-data">
+                <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                <div class="vacancy-data__info">
+                  <span class="place">Kiev</span>
+                  <span class="time">21.06.2021</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn--small"><span>View Job</span></a>
+            </div>
+            <div class="vacancy__list-item">
+              <div class="vacancy-data">
+                <a href="#" class="vacancy-data__name">Apple Sales Manager</a>
+                <div class="vacancy-data__info">
+                  <span class="place">Kiev</span>
+                  <span class="time">21.06.2021</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn--small"><span>View Job</span></a>
+            </div>
+            <div class="vacancy__list-item">
+              <div class="vacancy-data">
+                <a href="#" class="vacancy-data__name">Sales Channel Development Manager - Techniques</a>
+                <div class="vacancy-data__info">
+                  <span class="place">Kiev</span>
+                  <span class="time">21.06.2021</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn--small"><span>View Job</span></a>
+            </div>
+            <div class="vacancy__list-item">
+              <div class="vacancy-data">
+                <a href="#" class="vacancy-data__name">Sales Manager Assistant</a>
+                <div class="vacancy-data__info">
+                  <span class="place">Kiev</span>
+                  <span class="time">21.06.2021</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn--small"><span>View Job</span></a>
+            </div>
+          </div>
+
+          <div class="sendcv-banner">
+            <div class="text">We invite you to become a part <br> of our team!</div>
+            <a href="#" class="btn btn--white">Send CV</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @@include('./partials/footer.html')
+  </body>
+</html>
+
+
